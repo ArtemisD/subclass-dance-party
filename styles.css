@@ -1,3 +1,10 @@
+@font-face {
+  font-family:SilkscreenNormal;
+    src:url(fonts/slkscr.ttf),url(fonts/slkscr.eot);
+    font-weight:400;
+    font-style:normal;
+}
+
 body, html{
   height:100%;
 }
@@ -5,13 +12,18 @@ body{
   margin: 0px;
   background-color:#444;
   font-size: 18px;
+  background-image: url('src/bg.gif');
+  font-family: SilkscreenNormal, Monaco, "Courier New", Courier, monospace;
 }
 body, a:link, a:visited, a:active{
   color: lightblue;
 }
-.title, .addDancerButton{
+.title, .addDancerButton, .addMexinyanButton, .addPikanyanButton, .lineUpNyancats, .lineDance{
   padding:5px 12px;
   float:right;
+}
+.addDancerButton:hover, .addMexinyanButton:hover, .addPikanyanButton:hover, .lineUpNyancats:hover, .lineDance:hover {
+  color: #00008B;
 }
 .topbar{
   height:32px;
@@ -21,7 +33,65 @@ body, a:link, a:visited, a:active{
   background-color: #777;
 }
 .dancer{
-  border:10px solid red;
-  border-radius:10px;
-  position:absolute;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.dancer .rainbow_wrap{
+  height: 80px;
+  left: 0px;
+  position: absolute;
+  left: -100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 2s ease;
+}
+.rainbow_one, .rainbow_two, .rainbow_three, .rainbow_four, .rainbow_five {
+  width: 60px;
+  height: 50px;
+  position: relative;
+}
+.rainbow_top, .rainbow_second_top, .rainbow_middle_top, .rainbow_second_bottom, .rainbow_bottom{
+  width: 60px;
+  height: 10px;
+  background-color: #ff0000;
+  position: absolute;
+  top: 0;
+}
+.rainbow_second_top{
+  width: 60px;
+  height: 10px;
+  background-color: #ff9900;
+  position: absolute;
+  top: 10px;
+}
+.rainbow_middle_top{
+  width: 60px;
+  height: 10px;
+  background-color: #ffff00;
+  position: absolute;
+  top: 20px;
+}
+.rainbow_second_bottom{
+  width: 60px;
+  height: 10px;
+  background-color: #33ff00;
+  position: absolute;
+  top: 30px;
+}
+.rainbow_bottom{
+  width: 60px;
+  height: 10px;
+  background-color: #0099ff;
+  position: absolute;
+  top: 40px;
+}
+.nyan{
+  height: 80px;
+  left: 0px;
+  position: relative;
 }

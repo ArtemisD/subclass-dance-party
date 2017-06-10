@@ -1,16 +1,27 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Object Dance Party</title>
+    <title>Nyancat Dance Party</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <script src="lib/jquery.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js" integrity="sha256-0YPKAwZP7Mp3ALMRVB2i8GXeEndvCq3eSl/WsAl1Ryk=" crossorigin="anonymous"></script>
     <script src="src/dancer.js"></script>
     <script src="src/blinkyDancer.js"></script>
+    <script src="src/mexinyan.js"></script>
+    <script src="src/pikanyan.js"></script>
+    <audio autoplay>
+  <source src="src/nyancatmusic.mp3" type="audio/mpeg">
+</audio>
   </head>
   <body>
     <div class="topbar">
-      <span class="title">object dance party</span>
-      <a href="#" class="addDancerButton" data-dancer-maker-function-name="makeBlinkyDancer">add a blinky dancer</a>    </div>
+      <span class="title">Nyancat Dance Party</span>
+      <a href="#" class="lineUpNyancats" data-dancer-maker-function-name="lineUp">Line up!</a>
+      <a href="#" class="lineDance" data-dancer-maker-function-name="lineDance">Line dance!</a>
+      <a href="#" class="addPikanyanButton" data-dancer-maker-function-name="pikanyan">Add pikanyan</a>
+      <a href="#" class="addMexinyanButton" data-dancer-maker-function-name="mexinyan">Add mexinyan</a>
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="MakeBlinkyDancer">Add nyancat</a>
+    </div>
     <script src="src/init.js"></script>
   </body>
 </html>

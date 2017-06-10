@@ -64,42 +64,42 @@ mexinyan.prototype.constructor = mexinyan;
 mexinyan.prototype.step = function(timeBetweenSteps) {
   MakeDancer.prototype.step.call(this);
   $(this.rainbowTwo).animate({
-    top: "-=10",
+    top: '-=10',
   }, 100);
   $(this.rainbowThree).animate({
-    top: "-=20",
+    top: '-=20',
   }, 100);
   $(this.rainbowFour).animate({
-    top: "-=10",
+    top: '-=10',
   }, 100);
 
   $(this.rainbowTwo).animate({
-    top: "+=10",
+    top: '+=10',
   }, 100);
   $(this.rainbowThree).animate({
-    top: "+=20",
+    top: '+=20',
   }, 100);
   $(this.rainbowFour).animate({
-    top: "+=10",
+    top: '+=10',
   }, 100);
 
   $(this.rainbowTwo).animate({
-    top: "+=10",
+    top: '+=10',
   }, 100);
   $(this.rainbowThree).animate({
-    top: "+=20",
+    top: '+=20',
   }, 100);
   $(this.rainbowFour).animate({
-    top: "+=10",
+    top: '+=10',
   }, 100);
 
   $(this.rainbowTwo).animate({
-    top: "-=10",
+    top: '-=10',
   }, 100);
   $(this.rainbowThree).animate({
-    top: "-=20",
+    top: '-=20',
   }, 100);
   $(this.rainbowFour).animate({
-    top: "-=10",
+    top: '-=10',
   }, 100);
 };

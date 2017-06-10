@@ -3,11 +3,11 @@ var MakeDancer = function(top, left, timeBetweenSteps) {
   this._timeBetweenSteps = timeBetweenSteps;
   this.step();
   this.setPosition(top, left);
-  this.name = "dancer";
+  this.name = 'dancer';
   this.top = top;
   this.left = left;
   $(this.$node).on('click', function(e) {
-    $(this).toggle("explode");
+    $(this).toggle('explode');
   });
 };
 

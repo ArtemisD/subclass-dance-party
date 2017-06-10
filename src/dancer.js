@@ -6,9 +6,7 @@ var MakeDancer = function(top, left, timeBetweenSteps) {
   this.name = 'dancer';
   this.top = top;
   this.left = left;
-  $(this.$node).on('click', function(e) {
-    $(this).toggle('explode');
-  });
+  this.explode();
 };
 
 MakeDancer.prototype.step = function(timeBetweenSteps) {
@@ -23,4 +21,10 @@ MakeDancer.prototype.setPosition = function(top, left) {
     top: top,
     left: left
   }, 900);
+};
+
+MakeDancer.prototype.explode = function() {
+  $(this.$node).on('click', function(e) {
+    $(this).toggle('explode');
+  });
 };

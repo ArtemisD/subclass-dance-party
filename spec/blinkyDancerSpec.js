@@ -12,6 +12,14 @@ describe('BlinkyDancer', function() {
     expect(BlinkyDancer.$node).to.be.an.instanceof(jQuery);
   });
 
+  it('should have an explode function', function() {
+    expect(typeof BlinkyDancer.explode).to.be.equal('function');
+  });
+
+  it('should have an name nyancat', function() {
+    expect(BlinkyDancer.name).to.be.equal('nyancat');
+  });
+
   it('should have a step function that makes its node Blink', function() {
     sinon.spy(BlinkyDancer.$node, 'toggle');
     BlinkyDancer.step();
